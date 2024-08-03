@@ -1,0 +1,26 @@
+<div class="box">
+    <div class="container-opcao">
+        <button mat-mini-fab color="primary" matTooltip="Editar" (click)="abrirForm()"
+            matTooltipPosition="right"><mat-icon>edit</mat-icon></button>
+        <button mat-mini-fab color="primary" matTooltip="Like"
+            matTooltipPosition="right"><mat-icon>thumb_up</mat-icon></button>
+        <button mat-mini-fab color="primary" matTooltip="Deslike"
+            matTooltipPosition="right"><mat-icon>thumb_down</mat-icon></button>
+        <button mat-mini-fab color="primary" matTooltip="Deletar" (click)="deletar(anotacao.id)"
+            matTooltipPosition="right"><mat-icon>delete</mat-icon></button>
+    </div>
+    <mat-card class="card-anotacao">
+        <mat-card-header>
+            <mat-card-title>{{ anotacao.titulo }}</mat-card-title>
+            <mat-card-subtitle>{{ anotacao.subtitulo }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{ anotacao.anotacao }}</p>
+        </mat-card-content>
+        <mat-card-actions class="container-botao">
+            <button mat-button (click)="alterarEstado()" color="{{ anotacao.feito ? 'primary' : 'accent' }}">
+                <mat-icon>{{ anotacao.feito ? 'done_all' :'check' }}</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

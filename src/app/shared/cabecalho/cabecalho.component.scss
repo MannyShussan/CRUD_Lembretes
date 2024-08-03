@@ -1,0 +1,18 @@
+.container-cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .cabecalho {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    mat-slide-toggle span{
+        margin-left: 2rem;
+    }
+}

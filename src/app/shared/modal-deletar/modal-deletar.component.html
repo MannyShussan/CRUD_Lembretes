@@ -1,0 +1,9 @@
+<mat-card mat-dialog-content class="dialog">
+    <h2 mat-dialog-title>Deletar essa anotação</h2>
+    <p>Você deseja realmente deletar essa anotação de id: {{data.id}}?</p>
+    <div mat-dialog-actions class="container-botoes">
+        <button mat-flat-button mat-dialog-close color="primary">Cancelar<mat-icon>close</mat-icon></button>
+
+        <button mat-flat-button color="warn" [disabled]="abilitar">Deletar<mat-icon>delete</mat-icon></button>
+    </div>
+</mat-card>

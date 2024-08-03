@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@use './theme/myTheme.scss' as my;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+// $ultilidades-accent: mat.define-palette(mat.$deep-orange-palette, A200, A400, 900);
+
+// The warn palette is optional (defaults to red).
+// $ultilidades-warn: mat.define-palette(my.$amarelo-palette, 900);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+
+// $ultilidades-theme: mat.define-light-theme((color: (primary: $ultilidades-light-primary,
+//         accent: $ultilidades-light-accent,
+//         warn: $ultilidades-light-warn,
+//       )));
+
+
+// $ultilidades-dark-primary: mat.define-palette(my.$amarelo-palette, 500);
+// $ultilidades-dark-accent: mat.define-palette(my.$violeta-palette, 400);
+// $ultilidades-dark-warn: mat.define-palette(mat.$red-palette);
+
+// $ultilidades-dark-theme: mat.define-dark-theme((color:(primary:$ultilidades-dark-primary,
+//         accent:$ultilidades-dark-accent,
+//         warn:$ultilidades-dark-warn,
+//       )));
+
+// @include mat.all-component-themes($ultilidades-dark-theme);
+
+
+$ultilidades-light-accent: mat.define-palette(my.$carmesim-palette, 700);
+$ultilidades-light-primary: mat.define-palette(my.$ciano-palette, 200);
+$ultilidades-light-warn: mat.define-palette(mat.$red-palette);
+
+$ultilidades-light-theme: mat.define-light-theme((color:(primary:$ultilidades-light-primary,
+        accent:$ultilidades-light-accent,
+        warn:$ultilidades-light-warn,
+      )));
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($ultilidades-light-theme);
+
+// background-color: #282a3a;
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*{
+  z-index: 1;
+}

@@ -1,0 +1,17 @@
+<mat-card>
+    <div class="linha">
+        <h2>Nova anotação</h2>
+        <mat-dialog-actions mat-button mat-dialog-close>
+            <mat-icon matTooltip="Fechar" matTooltipPosition="right">close</mat-icon>
+        </mat-dialog-actions>
+    </div>
+    <form [formGroup]="formService.form">
+        <app-form-input [control]="formService.obterControle('titulo')" nome="Titulo" icone="title"
+            [value]="data.anotacao.titulo"></app-form-input>
+        <app-form-input [control]="formService.obterControle('subtitulo')" nome="Subtitulo" icone="subtitles"
+            [value]="data.anotacao.subtitulo"></app-form-input>
+        <app-form-text-area [control]="formService.obterControle('anotacao')" nome="Anotação"
+            [value]="data.anotacao.anotacao" icone="edit"></app-form-text-area>
+    </form>
+    <button mat-flat-button color="accent">Salvar</button>
+</mat-card>

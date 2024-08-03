@@ -1,0 +1,5 @@
+<mat-form-field appearance="outline">
+    <mat-label>{{ nome }}</mat-label>
+    <textarea matInput [formControl]="control" [(ngModel)]="value" (ngModelChange)="control.setValue(value)"></textarea>
+    <mat-icon matSuffix>{{ icone }}</mat-icon>
+</mat-form-field>

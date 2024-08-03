@@ -1,0 +1,141 @@
+$light-primary-text: rgba(white, 0.12);
+$dark-primary-text: rgba(black, 0.12);
+
+$carmesim-palette: (
+  50:#ffebf0,
+  100:#ffccd7,
+  200:#f297a1,
+  300:#ea6e7c,
+  400:#f7485d,
+  500:#fe2d44,
+  600:#ee2243,
+  700:#dc143c,
+  800:#cf0534,
+  900:#c10028,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$dark-primary-text,
+    500:$dark-primary-text,
+    600:$dark-primary-text,
+    700:$light-primary-text,
+    800:$light-primary-text,
+    900:$light-primary-text)
+);
+
+$ciano-palette: (
+  50:#d4f7ee,
+  100:#92ead2,
+  200:#14dcb4,
+  300:#00ca96,
+  400:#00b982,
+  500:#00aa6f,
+  600:#009c62,
+  700:#008b52,
+  800:#007a44,
+  900:#005d27,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$dark-primary-text,
+    500:$dark-primary-text,
+    600:$dark-primary-text,
+    700:$dark-primary-text,
+    800:$light-primary-text,
+    900:$light-primary-text)
+);
+
+$roxo-palette: (
+  50:#f4e4f4,
+  100:#e3bce5,
+  200:#d290d5,
+  300:#bf62c4,
+  400:#b13eb8,
+  500:#a312ac,
+  600:#9510a6,
+  700:#820a9f,
+  800:#710598,
+  900:#51008b,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$light-primary-text,
+    500:$light-primary-text,
+    600:$light-primary-text,
+    700:$light-primary-text,
+    800:$light-primary-text,
+    900:$light-primary-text)
+);
+
+
+$laranja-palette: (
+  50:#faf3e5,
+  100:#f4e1be,
+  200:#eecd96,
+  300:#e8ba70,
+  400:#e4ac59,
+  500:#dfa04d,
+  600:#da9548,
+  700:#d38842,
+  800:#ca7c3e,
+  900:#bc6a3a,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$dark-primary-text,
+    500:$dark-primary-text,
+    600:$dark-primary-text,
+    700:$dark-primary-text,
+    800:$light-primary-text,
+    900:$light-primary-text)
+);
+
+$amarelo-palette: (
+  50:#fefce5,
+  100:#fcf8bf,
+  200:#f9f394,
+  300:#f7ee67,
+  400:#f4e941,
+  500:#f2e404,
+  600:#f4d300,
+  700:#f4bb00,
+  800:#f4a200,
+  900:#f37700,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$dark-primary-text,
+    500:$dark-primary-text,
+    600:$dark-primary-text,
+    700:$dark-primary-text,
+    800:$dark-primary-text,
+    900:$dark-primary-text)
+);
+
+$violeta-palette: (
+  50:#efe7ff,
+  100:#d3c4ff,
+  200:#b49cff,
+  300:#9272ff,
+  400:#7350ff,
+  500:#4b2dff,
+  600:#3829fc,
+  700:#0021f4,
+  800:#001aef,
+  900:#0008eb,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$light-primary-text,
+    500:$light-primary-text,
+    600:$light-primary-text,
+    700:$light-primary-text,
+    800:$light-primary-text,
+    900:$light-primary-text)
+);
