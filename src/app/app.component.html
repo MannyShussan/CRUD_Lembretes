@@ -1,2 +1,4 @@
-<app-cabecalho></app-cabecalho>
-<router-outlet></router-outlet>
+<div class="corpo">
+    <app-cabecalho (evento)="trocarEstilo($event)"></app-cabecalho>
+    <router-outlet></router-outlet>
+</div>

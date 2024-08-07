@@ -26,21 +26,30 @@
 //         warn: $ultilidades-light-warn,
 //       )));
 
+// Dark theme variables
+$dark-bg-color: #222;
+$semi-dark-bg-color: #333;
+$light-text-color: #cacaca;
 
-// $ultilidades-dark-primary: mat.define-palette(my.$amarelo-palette, 500);
-// $ultilidades-dark-accent: mat.define-palette(my.$violeta-palette, 400);
-// $ultilidades-dark-warn: mat.define-palette(mat.$red-palette);
-
-// $ultilidades-dark-theme: mat.define-dark-theme((color:(primary:$ultilidades-dark-primary,
-//         accent:$ultilidades-dark-accent,
-//         warn:$ultilidades-dark-warn,
-//       )));
-
-// @include mat.all-component-themes($ultilidades-dark-theme);
+// Light theme variables
+$light-bg-color: #d2d2d2;
+$semi-light-bg-color: #c0c0c0;
+$dark-text-color: #333;
 
 
-$ultilidades-light-accent: mat.define-palette(my.$carmesim-palette, 700);
+
+$ultilidades-dark-primary: mat.define-palette(my.$violeta-palette, 400);
+$ultilidades-dark-accent: mat.define-palette(my.$amarelo-palette, 500);
+$ultilidades-dark-warn: mat.define-palette(mat.$red-palette);
+
+$ultilidades-dark-theme: mat.define-dark-theme((color:(primary:$ultilidades-dark-primary,
+        accent:$ultilidades-dark-accent,
+        warn:$ultilidades-dark-warn,
+      )));
+
+
 $ultilidades-light-primary: mat.define-palette(my.$ciano-palette, 200);
+$ultilidades-light-accent: mat.define-palette(my.$carmesim-palette, 700);
 $ultilidades-light-warn: mat.define-palette(mat.$red-palette);
 
 $ultilidades-light-theme: mat.define-light-theme((color:(primary:$ultilidades-light-primary,
@@ -52,14 +61,40 @@ $ultilidades-light-theme: mat.define-light-theme((color:(primary:$ultilidades-li
 // that you are using.
 @include mat.all-component-themes($ultilidades-light-theme);
 
-// background-color: #282a3a;
-
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-*{
+* {
   z-index: 1;
 }
+
+app-root.darkMode {
+  @include mat.all-component-themes($ultilidades-dark-theme);
+
+  .corpo {
+    background-color: #333;
+    color: $light-text-color;
+  }
+
+
+  app-content {
+    background-color: #333;
+  }
+
+  mat-card {
+    mat-card-head {
+      mat-card-title {
+        color: $light-text-color;
+        font-weight: 600;
+      }
+    }
+
+    color: $light-text-color;
+  }
+
+}
+
+// background-color: #282a3a;

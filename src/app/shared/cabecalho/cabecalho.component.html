@@ -7,7 +7,11 @@
                 </button>
                 <span>Mirandev</span>
             </div>
-            <mat-slide-toggle color="accent"><span>Modo noturno</span></mat-slide-toggle>
+            <div class="mode-container">
+                <mat-icon class="escuro">light_mode</mat-icon>
+                <mat-slide-toggle color="accent" [formControl]="control" (toggleChange)="toggle()"></mat-slide-toggle>
+                <mat-icon class="luz">dark_mode</mat-icon>
+            </div>
         </div>
     </app-container>
 </mat-toolbar>
