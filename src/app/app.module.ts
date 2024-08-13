@@ -24,6 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormInputComponent } from './shared/form-input/form-input.component';
 import { FormTextAreaComponent } from './shared/form-text-area/form-text-area.component';
 import { ModalDeletarComponent } from './shared/modal-deletar/modal-deletar.component';
+import { ThemeService } from './core/services/theme/theme.service';
+import { ThemeManagerComponent } from './shared/theme-manager/theme-manager.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { ModalDeletarComponent } from './shared/modal-deletar/modal-deletar.comp
     CabecalhoComponent,
     FormInputComponent,
     FormTextAreaComponent,
-    ModalDeletarComponent
+    ModalDeletarComponent,
+    ThemeManagerComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,9 @@ import { ModalDeletarComponent } from './shared/modal-deletar/modal-deletar.comp
     MatToolbarModule,
     MatSlideToggleModule
   ],
-  providers: [],
+  providers: [
+    ThemeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   constructor(private overlay: OverlayContainer) { }
 
   public trocarEstilo(dark: boolean) {
-
     this.className = !dark ? 'darkMode' : '';
     dark ? this.overlay.getContainerElement().classList.remove('darkMode') : this.overlay.getContainerElement().classList.add('darkMode');
   }

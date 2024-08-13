@@ -139,3 +139,49 @@ $violeta-palette: (
     800:$light-primary-text,
     900:$light-primary-text)
 );
+
+$mostarda-palette: (
+  50:#fefde6,
+  100:#fcf9c2,
+  200:#fbf699,
+  300:#f9f16e,
+  400:#f6ed4b,
+  500:#f3e820,
+  600:#f7d91f,
+  700:#f6c112,
+  800:#f6a800,
+  900:#f47e00,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$dark-primary-text,
+    500:$dark-primary-text,
+    600:$dark-primary-text,
+    700:$dark-primary-text,
+    800:$dark-primary-text,
+    900:$dark-primary-text)
+);
+
+$cinza-palette: (
+  50:#ecedee,
+  100:#ced4d8,
+  200:#aeb7bf,
+  300:#8d9ba7,
+  400:#758694,
+  500:#5d7282,
+  600:#516472,
+  700:#42505c,
+  800:#333e47,
+  900:#222a30,
+  contrast:(50:$dark-primary-text,
+    100:$dark-primary-text,
+    200:$dark-primary-text,
+    300:$dark-primary-text,
+    400:$dark-primary-text,
+    500:$light-primary-text,
+    600:$light-primary-text,
+    700:$light-primary-text,
+    800:$light-primary-text,
+    900:$light-primary-text)
+);

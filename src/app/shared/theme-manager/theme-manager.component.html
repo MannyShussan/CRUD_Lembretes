@@ -1,0 +1,7 @@
+<div class="mode-container">
+    <mat-icon (click)="trocaCor()">palette</mat-icon>
+    <div class="icone" (click)="atualizaTema()">
+        <mat-icon class="escuro" *ngIf="!corDeFundo">light_mode</mat-icon>
+        <mat-icon class="luz" *ngIf="corDeFundo">dark_mode</mat-icon>
+    </div>
+</div>

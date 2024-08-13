@@ -1,0 +1,32 @@
+.mode-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+
+    mat-icon {
+        color: white;
+        cursor: pointer;
+    }
+
+    .icone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+
+        mat-icon {
+            &.luz {
+                color: white;
+            }
+
+            &.escuro {
+                color: #333;
+            }
+        }
+    }
+
+    mat-slide-toggle {
+        margin: 0 2rem;
+    }
+}

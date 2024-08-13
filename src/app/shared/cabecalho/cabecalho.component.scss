@@ -12,23 +12,4 @@
         align-items: center;
         column-gap: 1rem;
     }
-
-    .mode-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        mat-icon {
-            &.luz{
-                color: white;
-            }
-            &.escuro{
-                color: black;
-            }
-        }
-
-        mat-slide-toggle {
-            margin: 0 2rem;
-        }
-    }
 }
